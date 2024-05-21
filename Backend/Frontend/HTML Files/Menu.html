@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="../CSS Files/header and footer style.css">
+    <link rel="stylesheet" href="../CSS Files/MenuStyle.css">
+    <link rel="stylesheet" href="../CSS Files/ShoppingCart.css">
+    <script src="../JavaScript Files/script.js"></script>
+    <script src="../JavaScript Files/ShoppingCart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container2">
+        <header>
+            <h1>Main Menu</h1>
+            <div class="logo-container">
+                <img src="../images/UH Dining Services logo.png" class="logo">
+            </div>
+            <div class="cart-container"> <!-- Added class "cart-container" -->
+                <img src="../images/ShoppingCart.png" class="ShoppingCart">
+                <span class="quantity">0</span>
+            </div>
+        </header>
+        <div class="Menu"></div>
+    </div>
+    <div class="cart-popup"> <!-- Content of the cart popup goes here -->
+        <h2>Shopping Cart</h2>
+        <ul class="MenuItems"></ul>
+        <div class="checkout">
+            <div class="total">0</div>
+            <div class="closeShopping">Close</div> <!-- Changed class name to "closeShopping" -->
+        </div>
+    </div>
+    
+    <div class="topnav">
+        <a href="biography.html">Home</a>
+        <a href="Cafeteria Main.html">Last Bite</a>
+        <a href="menu.html" class="active">Menu</a>
+        <a href="Try Out.html">Try Out</a>
+        <a href="About Us.html">About Us</a>
+        <a href="More.html">More</a>
+    </div>
+
+
+    <section id="WelcomeText1"> <!--Display a video-->
+        <div class="container">
+            <video src="../images/2023-2024 _ UH Dining Program.mp4" width="900" controls autoplay muted></video>
+    </section>
+
+    <section id="body2"> <!--Menu Buttons to display the menu-->
+        <div class="container">
+            <div class="text">
+                <h2>Menu</h2>
+            </div>
+            <div id="MenuSelectionButtons">
+                <button onclick="showMenu('Burgers')">Burgers</button>
+                <button onclick="showMenu('Chicken')">Chicken</button>
+                <button onclick="showMenu('Pizza')">Pizza</button>
+                <button onclick="showMenu('HotDogs')">Hot Dog</button>
+                <button onclick="showMenu('Salad')">Salad</button>
+                <button onclick="showMenu('Drinks')">Drinks</button>
+            </div>
+            <div class="menu-columns">
+                <ul id="menuContainer"></ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="WelcomeText2"> <!--Display text as a greeting-->
+        <div class="container">
+            <div class="text">
+                <p><span>DONT STOP</span>-UNTIL YOU HAVE EATEN THE VERY-<span>LAST BITE</span></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="body1"> <!--A logo carousel to display partnered companies-->
+        <div class="container">
+            <div class="text">
+                <h2>We are partnered with these companies</h2>
+            </div>
+            <div class="imgholders">
+                <div class="CompanyLogos">
+                    <img src="../images/McDonalds.png" alt="McDonalds">
+                    <img src="../images/ChickFilA.png" alt="chickfila"">
+                    <img src=" ../images/Chipotle.png" alt="Chipotle">
+                    <img src="../images/Subway.png" alt="Subway">
+                    <img src="../images/Dominos.png" alt="Dominos">
+                    <img src="../images/KFCLogo.png" alt="KFC">
+                    <img src="../images/TacoBell.png" alt="TacoBell" style="height: 145px;">
+                </div>
+                <div class="CompanyLogos">
+                    <img src="../images/McDonalds.png" alt="McDonalds">
+                    <img src="../images/ChickFilA.png" alt="chickfila"">
+                    <img src=" ../images/Chipotle.png" alt="Chipotle">
+                    <img src="../images/Subway.png" alt="Subway">
+                    <img src="../images/Dominos.png" alt="Dominos">
+                    <img src="../images/KFCLogo.png" alt="KFC">
+                    <img src="../images/TacoBell.png" alt="TacoBell" style="height: 145px;"">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="body3"> <!--Mobile ordering-->
+        <div class="container">
+            <img src="../images/BoostOrderingLogo.png" alt="BoostOrderingLogo">
+            <div class="text">
+                <h2>Skip the line</h2>
+                <h2>Order for pickup</h2>
+                <p>Use Boost mobile ordering to preorder meals from top on-campus brands, such as Panda Express, Chick-fil-A, Asado, and
+                    Mondo Subs and pay using your credit/debit card or campus card. Just pull out your phone and search the University
+                    of Houston, pick your current food craving, customize your meal, and choose a pickup time that works best for you!
+                </p><br>
+                <p>Boost offers convenience, options, and fast service at your fingertips, leaving more time for studying, seeing friends, and enjoying life on campus.</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <footer>
+        <p>14000 University Blvd</p>
+        <p>Sugar Land, TX 77479</p>
+        <p>(832) 842-2900</p>
+        <a href="https://www.uh.edu/">www.uh.edu</a>
+    </footer>
+
+</body>
+
+</html>

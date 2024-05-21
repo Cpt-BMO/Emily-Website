@@ -1,0 +1,16 @@
+#OrderConfirm {
+    display: grid;
+    grid-template-rows: auto 0.5fr auto;
+    justify-items: center;
+    align-items: center;
+    width: 50%;
+    height: 30vh;
+    padding: 20px;
+    background: rgb(34, 32, 32);
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    margin: auto;
+    margin-top: 25px;
+}

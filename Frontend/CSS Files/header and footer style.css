@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #0f0f0f;
+    background-image: url(../images/Cafeteria_background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+header {
+    background: rgb(28, 28, 28);
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+}
+
+.topnav{
+    background-color: #333;
+    overflow: auto;
+}
+
+.topnav a{
+    float:left;
+    color: white;
+    text-align:center;
+    padding:14px 16px;
+    font-size:19px;
+    text-decoration: none;
+}
+
+.topnav a:hover{
+    background-color: rgb(104, 104, 104);
+    color: white;
+}
+
+.topnav a.active{
+    background-color: rgb(10, 144, 185);
+    color:#fff;
+}
+
+.logo{
+    position: absolute;
+    height: auto;
+    left: 15px;
+    width: 165px;
+    top: 0px;
+}
+
+.ShoppingCart{
+    width: 50px;
+    position: absolute;
+    right: 25px;
+    top: 20px;
+}
+
+header span{
+    display: flex;
+    width: 28px;
+    height: 28px;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 50%;
+    position: absolute;
+    top: 48px;
+    right: 15px;
+}
+
+footer {
+    margin-top: 50px;
+    text-align: left;
+    padding: 15px 0;
+    background: #333;
+    color: #fff;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+
+footer a {
+    color: red; 
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+footer p, a{
+    margin-left: 20px;
+}
+
+@media screen and (max-width:1300px) {
+    footer{
+        position: relative;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .logo {
+        position: absolute;
+        height: auto;
+        left: -5px;
+        width: 100px;
+        top: 15px;
+    }
+    header {
+        font-size: 12px;
+        text-align: center;
+    }  
+}
