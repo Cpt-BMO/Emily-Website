@@ -111,7 +111,7 @@ html, body {
 }
 
 #image-track > .image {
-    width: 22vmin;
+    width: 16vmin;
     height: 45vmin;
     object-fit: cover;
     object-position: center;
