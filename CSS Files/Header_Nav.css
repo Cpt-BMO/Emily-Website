@@ -1,0 +1,90 @@
+/* Vertical navigation styling with logo */
+.topnav {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100vh;
+    background-color: #fff;
+    padding-top: 20px;
+    align-items: center;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+}
+
+/* Style for the logo */
+.topnav .logo {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Navigation link styling */
+.topnav a {
+    color: #333;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    text-align: left;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    transition: color 0.3s;
+    text-align: center;
+}
+
+.topnav a.active {
+    color: #a247c4;
+}
+
+.topnav a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 5px;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #dcbce7;
+    transition: width 0.4s ease;
+}
+
+.topnav a:hover {
+    color: #c390d6;
+}
+
+.topnav a:hover::after {
+    width: 25%;
+}
+
+/* Body styling */
+body {
+    margin: 0; /* Remove default margin */
+    height: 100vh; /* Make body full height */
+    display: flex;
+    flex-direction: column; /* Stack sections vertically */
+    background: linear-gradient(to bottom, lightblue 50%, pink 50%); /* Gradient background */
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+footer {
+    background-color: #313233; /* Dark background for footer */
+    color: white; /* White text color */
+    text-align: center; /* Center text */
+    padding: 20px; /* Add padding */
+    position: relative; /* Relative positioning */
+    bottom: 0; /* Ensure footer stays at the bottom */
+    width: 100%; /* Full width */
+    font-family: 'Tektur', sans-serif;
+}
+footer a {
+    color: white; /* White links */
+    text-decoration: none; /* No underline on links */
+    margin: 0 10px; /* Spacing between links */
+}
