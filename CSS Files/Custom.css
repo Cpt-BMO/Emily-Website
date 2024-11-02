@@ -1,0 +1,53 @@
+.light-blue-section {
+    background-color: #b3e0f7;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Tektur', sans-serif;
+}
+
+.pink-section {
+    background-color: pink;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Tektur', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+h3{
+    font-weight: bold;
+    font-size: 22px;
+}
+
+p{
+    font-size: 18px;
+    font-weight: bolder;
+    color: rgb(20, 20, 20);
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #313233; /* Dark background for footer */
+    color: white; /* White text color */
+    text-align: center; /* Center text */
+    padding: 20px; /* Add padding */
+    position: relative; /* Relative positioning */
+    bottom: 0; /* Ensure footer stays at the bottom */
+    width: 100%; /* Full width */
+    font-family: 'Tektur', sans-serif;
+}
+footer a {
+    color: white; /* White links */
+    text-decoration: none; /* No underline on links */
+    margin: 0 10px; /* Spacing between links */
+}
+
+footer p{
+    color: white;
+}
