@@ -24,14 +24,36 @@ h2{
 
 .deleteButton, #checkoutButton {
     margin-left: 10px;
-    padding: 5px 10px;
-    background-color: LightCoral; /* Example color */
+    padding: 25px 6px; /* Reduce the padding for smaller buttons */
+    background-color: rgb(240, 128, 128);
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 20px; /* Adjust font size for smaller text */
 }
 
 .deleteButton:hover, #checkoutButton:hover {
     background-color: Red; /* Change color on hover */
+}
+
+footer {
+    background-color: #313233; /* Dark background for footer */
+    color: white; /* White text color */
+    text-align: center; /* Center text */
+    position: absolute;
+    bottom: 0; /* Ensure footer stays at the bottom */
+    width: 100%; /* Full width */
+    font-family: 'Tektur', sans-serif;
+    height: auto;
+}
+
+footer a {
+    color: white; /* White links */
+    text-decoration: none; /* No underline on links */
+    margin: 0 10px; /* Spacing between links */
+}
+
+footer p{
+    color: white;
 }
