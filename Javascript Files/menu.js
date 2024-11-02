@@ -97,6 +97,24 @@ function showMenu(meal) {
   });
 }
 
+function addToCart(item) {
+    const currentCart = JSON.parse(localStorage.getItem("shoppingCart")) || [];
+
+    // Check if the cart already contains an item
+    if (currentCart.length > 0) {
+        alert("There is already an item in the cart. The maximum is 1 item.");
+        return; // Exit the function if the cart already has an item
+    }
+
+    // If the cart is empty, add the new item
+    const cartItem = { name: item.name, price: item.price, image: item.image };
+    currentCart.push(cartItem); // Add the item to the cart
+    localStorage.setItem("shoppingCart", JSON.stringify(currentCart)); // Save to local storage
+
+    alert(`${item.name} has been added to your cart!`);
+}
+
+
 document.addEventListener("DOMContentLoaded", function() {  // this will display the burger section first when the page loads
     showMenu('Cakes');
 });
